@@ -1,0 +1,48 @@
+.cupon {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    &__card {
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 150px;
+      background-color: red;
+      .cupon__text__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h2 {
+          height: 50px;
+          font-weight: 700;
+          font-size: 24px;
+          font-family: Inter;
+        }
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          font-family: Inter;
+        }
+      }
+      img {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+      }
+    }
+    .cupon__card-one {
+      background-color: #ff8cff;
+    }
+    .cupon__card-two {
+      background-color: #ffbd3c;
+    }
+    .cupon__card-three {
+      background-color: #60d9ff;
+    }
+  }
+}

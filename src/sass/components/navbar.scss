@@ -1,0 +1,124 @@
+.header {
+  position: sticky;
+  z-index: 9999999;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #fe2722;
+  box-shadow: 0px 0px 2px 2px #ddd;
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      width: 100%;
+      font-weight: 700px;
+      font-size: 24px;
+      font-family: Inter;
+      color: #fff;
+    }
+    &__right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .navbar__icon__wrapper {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding: 5px;
+        background-color: #e81711;
+        border-radius: 5px;
+        svg {
+          font-size: 20px;
+          color: #fff;
+        }
+        p {
+          font-size: 13px;
+          font-weight: 400;
+          font-family: Inter;
+          color: #fff;
+        }
+      }
+      .navbar__search {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 900px;
+        border-radius: 5px;
+        height: 60px;
+        padding: 10px 0px;
+        background-color: #fff;
+        input {
+          padding-left: 15px;
+          border: none;
+          outline: none;
+          font-size: 16px;
+          font-weight: 400;
+          font-family: Inter;
+        }
+        input::placeholder {
+          font-size: 14px;
+          font-weight: 400;
+          font-family: Inter;
+        }
+        button {
+          margin-right: 15px;
+          border: none;
+          outline: none;
+          border-radius: 30px;
+          width: 120px;
+          height: 50px;
+          font-weight: 400px;
+          font-size: 14px;
+          background-color: #ccff66;
+        }
+        .search__list {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          width: 100%;
+          border-radius: 0px 0px 10px 10px;
+          padding: 20px;
+          height: 300px;
+          top: 60px;
+          backdrop-filter: blur(50px);
+          position: absolute;
+          overflow: auto;
+          .data__list {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            img {
+              width: 50px;
+              height: 50px;
+              object-fit: contain;
+              background-color: #ddd;
+              border-radius: 5px;
+            }
+            p {
+              font-family: Inter;
+              font-weight: 400;
+              font-size: 16px;
+            }
+          }
+          .empty {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: Inter;
+          }
+        }
+      }
+      .navbar__list {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  }
+}
